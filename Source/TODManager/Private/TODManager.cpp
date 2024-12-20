@@ -58,7 +58,6 @@ void FTODManagerModule::PluginButtonClicked()
 	"/Script/Blutility.EditorUtilityWidgetBlueprint'/TODManager/UI/BP_TODEditorPanel.BP_TODEditorPanel'";
 
 	UWidgetBlueprint* Blueprint = LoadObject<UWidgetBlueprint>(nullptr, *EditorPanelPath);
-	// check(Blueprint->GeneratedClass->IsChildOf(UEditorUtilityWidget::StaticClass()));
 	UEditorUtilityWidgetBlueprint* EditorPanelBlueprint = Cast<UEditorUtilityWidgetBlueprint>(Blueprint);
 	if (!EditorPanelBlueprint)
 	{
